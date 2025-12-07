@@ -8,6 +8,7 @@ app = FastAPI(title="AgroCredit V2 API")
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://agroscore-app.onrender.com",  # Production frontend
 ]
 
 app.add_middleware(
