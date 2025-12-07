@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:8000/api";
+// const API_URL = "http://localhost:8000/api";
+const API_URL = process.env.NEXT_PUBLIC_API_URL || "https://agrocredit-api.onrender.com/api";
 
 export async function fetcher(url: string, options?: RequestInit) {
     const res = await fetch(`${API_URL}${url}`, options);

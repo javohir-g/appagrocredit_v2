@@ -6,7 +6,7 @@ import { api } from "@/lib/api";
 
 interface FarmerProfile {
     id: number;
-    email: str;
+    email: string;
     full_name: string;
     credit_score: number;
     farm_name: string;
