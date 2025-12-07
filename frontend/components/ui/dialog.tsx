@@ -1,12 +1,4 @@
-export { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter } from './dialog-primitive'; // Mock export for now as we used custom modal implementation in page.tsx for speed. This file is placeholder to suppress import errors if any external components rely on it, but the page.tsx implementation is self-contained. 
-// Actually, to avoid complexity, I replaced the radix-ui dialog with a custom Tailwind modal in the page code above. 
-// So this file might be empty or a dummy.
-// Let's make it a dummy component that does nothing, just to satisfy the import if I hadn't removed it, 
-// BUT, I did remove the radix-ui dependency from the code above (I wrote a custom modal <div>).
-// Wait, I left the imports in the code above: import { Dialog... } from "@/components/ui/dialog";
-// I need to create that file or remove the imports. 
-// I will create a simple dummy version.
-
+// Simple dialog components for compatibility
 import * as React from "react"
 
 export const Dialog = ({ children }: { children: React.ReactNode }) => <>{children}</>

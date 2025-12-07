@@ -3,7 +3,6 @@
 import { useEffect, useState } from "react";
 import { Check, X, AlertTriangle, Sprout, FileText, ChevronDown, ChevronUp } from "lucide-react";
 import { api } from "@/lib/api";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogFooter, Button } from "@/components/ui/dialog";
 
 interface Application {
     id: number;
@@ -220,8 +219,8 @@ export default function BankApplications() {
                             <button
                                 onClick={confirmAction}
                                 className={`px-6 py-2 rounded-lg text-white font-medium shadow-lg transition-transform active:scale-95 ${documentModal.type === 'approve'
-                                        ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-500/20'
-                                        : 'bg-red-600 hover:bg-red-700 shadow-red-500/20'
+                                    ? 'bg-emerald-600 hover:bg-emerald-700 shadow-emerald-500/20'
+                                    : 'bg-red-600 hover:bg-red-700 shadow-red-500/20'
                                     }`}
                             >
                                 {documentModal.type === 'approve' ? 'Sign & Approve' : 'Confirm Rejection'}
