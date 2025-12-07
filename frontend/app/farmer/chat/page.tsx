@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function ChatPage() {
     const [message, setMessage] = useState("");
     const [chat, setChat] = useState([
-        { role: 'assistant', text: 'Здравствуйте! Я ваш AI ассистент по агро-финансам. Чем могу помочь сегодня?' }
+        { role: 'assistant', text: 'Hello! I am your AI assistant for agro-finance. How can I help you today?' }
     ]);
 
     const handleSend = () => {
@@ -40,8 +40,8 @@ export default function ChatPage() {
                 {chat.map((msg, idx) => (
                     <div key={idx} className={`flex ${msg.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                         <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${msg.role === 'user'
-                                ? 'bg-emerald-600 text-white rounded-br-none'
-                                : 'bg-white border border-slate-200 text-slate-800 rounded-bl-none'
+                            ? 'bg-emerald-600 text-white rounded-br-none'
+                            : 'bg-white border border-slate-200 text-slate-800 rounded-bl-none'
                             }`}>
                             {msg.text}
                         </div>
