@@ -136,7 +136,7 @@ class DatabaseManager:
         conn.execute("""
             INSERT INTO recommendations (farm_id, title, message, type)
             VALUES (?, ?, ?, ?)
-        """, (farm_id, "Рекомендация по поливу", "На основе прогноза погоды, рекомендуем полив через 2 дня. Ожидается сухая погода в течение недели.", "irrigation"))
+        """, (farm_id, "Irrigation Recommendation", "Based on the weather forecast, we recommend irrigation in 2 days. Dry weather is expected throughout the week.", "irrigation"))
         
         print("Seeding complete.")
 

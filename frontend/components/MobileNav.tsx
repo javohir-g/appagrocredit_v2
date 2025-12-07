@@ -18,7 +18,7 @@ export default function MobileNav() {
                         }`}
                 >
                     <Home className="w-6 h-6" />
-                    <span className="text-[10px] font-medium">Главная</span>
+                    <span className="text-[10px] font-medium">Home</span>
                 </Link>
 
                 <Link
@@ -27,7 +27,7 @@ export default function MobileNav() {
                         }`}
                 >
                     <CreditCard className="w-6 h-6" />
-                    <span className="text-[10px] font-medium">Кредиты</span>
+                    <span className="text-[10px] font-medium">Credits</span>
                 </Link>
 
                 <Link
@@ -36,7 +36,7 @@ export default function MobileNav() {
                         }`}
                 >
                     <Sprout className="w-6 h-6" />
-                    <span className="text-[10px] font-medium">Мои поля</span>
+                    <span className="text-[10px] font-medium">My Fields</span>
                 </Link>
 
                 <Link
@@ -45,7 +45,7 @@ export default function MobileNav() {
                         }`}
                 >
                     <MessageCircle className="w-6 h-6" />
-                    <span className="text-[10px] font-medium">AI Агент</span>
+                    <span className="text-[10px] font-medium">AI Agent</span>
                 </Link>
 
                 <Link
@@ -54,7 +54,7 @@ export default function MobileNav() {
                         }`}
                 >
                     <User className="w-6 h-6" />
-                    <span className="text-[10px] font-medium">Профиль</span>
+                    <span className="text-[10px] font-medium">Profile</span>
                 </Link>
             </div>
         </div>

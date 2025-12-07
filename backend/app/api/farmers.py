@@ -217,7 +217,7 @@ async def get_latest_recommendation():
                 message=row['message'],
                 type=row['type'] or "general"
             )
-        return Recommendation(title="Нет рекомендаций", message="Все отлично!", type="general")
+        return Recommendation(title="No Recommendations", message="Everything looks great!", type="general")
 
 @router.post("/loans/{loan_id}/sign")
 async def sign_loan(loan_id: int):
